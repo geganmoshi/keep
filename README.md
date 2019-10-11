@@ -43,7 +43,7 @@ public int onStartCommand(Intent intent, int flags, int startId) {
                 return;
             }
             List<String> commnandList = new ArrayList<String>();
-            commnandList.add("am start -n com.heyiweilai.applicationtv/com.heyiweilai.applicationtv.LoadingActivity");
+            commnandList.add("am start -n com.xxx.application/com.xxx.application.YourMainActivity");
             ShellUtils.CommandResult rs = ShellUtils.execCommand(commnandList, true);
         }else {
             if (need_excute) {
@@ -52,7 +52,7 @@ public int onStartCommand(Intent intent, int flags, int startId) {
                     return;
                 }
                 List<String> commnandList = new ArrayList<String>();
-                commnandList.add("am start -n com.heyiweilai.applicationtv/com.heyiweilai.applicationtv.LoadingActivity");
+                commnandList.add("am start -n com.xxx.application/com.xxx.application.YourMainActivity");
                 ShellUtils.CommandResult rs = ShellUtils.execCommand(commnandList, true);
             }          
 }
